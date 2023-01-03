@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "dbc7a8cf-82e8-4bac-a457-5ead67994237",
+		"name": "report system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7583512"
+	},
+	"item": [
+		{
+			"name": "change status based on either blocked or resolved",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "source_report",
+							"value": "source13",
+							"type": "text"
+						},
+						{
+							"key": "report_type",
+							"value": "spam",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "hi there anyone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "source_report",
+							"value": "source13",
+							"type": "text"
+						},
+						{
+							"key": "report_type",
+							"value": "spam",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "hi there anyone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reports",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "source_report",
+							"value": "source13",
+							"type": "text"
+						},
+						{
+							"key": "report_type",
+							"value": "spam",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "hi there anyone",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/report",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"report"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
